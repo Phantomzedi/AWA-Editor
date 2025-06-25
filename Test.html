@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRE AWA Writing App - Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Timer Section -->
+        <div id="timer-container">
+            <h2>Time Left: <span id="timer">30:00</span></h2>
+        </div>
+
+        <!-- Main Layout with Two Panels: Prompt and Editor -->
+        <div class="editor-container">
+            <!-- Left Side: The Prompt -->
+            <div id="prompt-container">
+                <h3>Prompt</h3>
+                <p id="random-topic">Loading topic...</p>
+            </div>
+
+            <!-- Right Side: The Essay Text Editor -->
+            <div id="editor-container">
+                <textarea id="essay-editor" placeholder="Start writing your essay..." rows="10" cols="50"></textarea>
+                
+                <!-- Text Editor Buttons -->
+                <div class="editor-buttons">
+                    <button id="cut">Cut</button>
+                    <button id="paste">Paste</button>
+                    <button id="undo">Undo</button>
+                    <button id="redo">Redo</button>
+                </div>
+                
+                <button id="save-essay">Save Essay</button>
+            </div>
+        </div>
+
+        <button id="start-timer">Start Timer</button>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>
